@@ -16,11 +16,8 @@ connectDB();
 const app = express();
 
 // Configure CORS middleware
-app.use(cors({
-  origin: ['http://localhost:5173', 'https://ebay-sepia.vercel.app/'], // Add your actual Vercel frontend URL here
-}));
 
-
+app.use(cors());  // Enable CORS
 app.use(express.json());
 
 // Define routes
