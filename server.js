@@ -17,8 +17,9 @@ const app = express();
 
 // Configure CORS middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow requests from Vite's dev server
+  origin: ['http://localhost:5173', 'https://ebay-sepia.vercel.app/'], // Add your actual Vercel frontend URL here
 }));
+
 
 app.use(express.json());
 
