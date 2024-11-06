@@ -17,7 +17,7 @@ const app = express();
 
 // Configure CORS middleware
 app.use(cors({
-  origin: 'https://ebaybe.onrender.com', // Allow requests from Vite's dev server
+  origin: 'http://localhost:5173', // Allow requests from Vite's dev server
 }));
 
 app.use(express.json());
